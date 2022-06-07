@@ -1,2 +1,0 @@
-DROP DATABASE IF EXISTS project2_db;
-CREATE DATABASE project2_db;

@@ -1,0 +1,23 @@
+{{#if Posts}}
+  {{#each Posts as |post|}}
+    <div class='row'>
+      <div class='card'>
+        <div class='card-header'>{{post.title}}</div>
+        <div class='card-body'>
+          <p class='card-text'>
+            {{blog.content}}
+          </p>
+          <a href='/blogpage.html' class='btn btn-primary'>Go somewhere</a>
+        </div>
+        <div class='card-footer text-muted'>
+          <a href='/edit-blog'>Edit Blog</a>
+          <button id='delete-post-button'>Delete Post</button>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+{{/if}}
+
+<div class='row'>
+  <a id='add-post-link' href='/create-blog'>Add Post</a>
+</div>

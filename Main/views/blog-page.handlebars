@@ -1,0 +1,39 @@
+<div class='row'>
+  <div class='card'>
+    <div class='card-header'>{{title}}</div>
+    <div class='card-body'>
+      <p class='card-text'>
+        {{content}}
+      </p>
+    </div>
+    <div class='card-footer text-muted'>
+      Posted by
+      {{user.username}}
+      on
+      {{createdAt}}
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <form id='comment-form'>
+    <textarea id='comment-text-area'></textarea>
+    <button id='comment-submit' data-id='{{id}}'>Submit Comment</button>
+  </form>
+</div>
+
+{{#each comments as |comment|}}
+  <div class='row'>
+    <div class='card'>
+      <div class='card-body'>
+        <p class='card-text'>{{comment.content}}</p>
+      </div>
+      <div class='card-footer text-muted'>
+        Posted by
+        {{comment.user.username}}
+        on
+        {{comment.createdAt}}
+      </div>
+    </div>
+  </div>
+{{/each}}
