@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-
 class SaleItem extends Model {}
-
 SaleItem.init(
   {
     //id id for db
@@ -12,7 +10,7 @@ SaleItem.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    //picture of item 
+    //picture of item
     picture: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -48,7 +46,6 @@ SaleItem.init(
         key: 'id',
       },
     },
-    
   },
   {
     sequelize,
