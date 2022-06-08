@@ -1,0 +1,17 @@
+body {
+    background-color: darkslategrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup-box {
+    width: 360px;
+    height: 610px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+h1{
+    text-align:center;
+    padding-top: 15px;
+}
