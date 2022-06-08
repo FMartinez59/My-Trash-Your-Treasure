@@ -1,0 +1,26 @@
+[
+  {
+    "picture": "URL",
+    "item_name": "Boxing Set",
+    "price": 50,
+    "quantity": 1,
+    "status": false,
+    "description": "a stuffed or inflated bag, typically cylindrical or pear-shaped, suspended so it can be punched for exercise or training, especially by boxers."
+  },
+  {
+    "picture": "URL",
+    "item": "Golf Set",
+    "price": 57,
+    "quantity": 25,
+    "status": false,
+    "description": "Hybrid: A 5 Hybrid is a great alternative to difficult long irons that gives you more confidence on a variety of shots"
+  },
+  {
+    "picture": "URL",
+    "item": "Play Station 10",
+    "price": 599,
+    "quantity": 3,
+    "status": false,
+    "description": "PlayStation®5: The PS10™ console unleashes new gaming possibilities that you never anticipated. Experience lightning-fast loading with an ultra-high-speed SSD, deeper immersion with support for haptic feedback, adaptive triggers, and 3D Audio, and an all-new generation of incredible PlayStation® games."
+  }
+]
