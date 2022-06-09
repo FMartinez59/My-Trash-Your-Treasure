@@ -17,16 +17,16 @@ router.get('/:id', (req, res) => {
   });
   //different id
   router.put('/:id', (req, res) => {
-    // Calls the update method on the Book model
+    // Calls the update method on the SaleItem model
     SaleItem.update(
       {
         // All the fields you can update and the data attached to the request body.
-        title: req.body.title,
-        author: req.body.author,
-        isbn: req.body.isbn,
-        pages: req.body.pages,
-        edition: req.body.edition,
-        is_paperback: req.body.is_paperback,
+        picture: req.body.picture,
+        item_name: req.body.item_name,
+        description: req.body.description,
+        price: req.body.price,
+        quantity: req.body.quantity,
+        status: req.body.status,
       },
       {
         // Gets the books based on the isbn given in the request parameters
@@ -35,10 +35,10 @@ router.get('/:id', (req, res) => {
         },
       }
     )//when they hit save send this back
-      .then((updatedBook) => {
+      .then((updatedItem) => {
         //might not need to send json 
         //make sure to send updated table of edited field
-        res.json(updatedBook);
+        res.json(updatedItem);
       })
       .catch((err) => res.json(err));
   });
