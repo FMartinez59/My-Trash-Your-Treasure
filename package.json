@@ -2,9 +2,5 @@
   "name": "My-Trash-Your-Treasure",
   "lockfileVersion": 2,
   "requires": true,
-  "packages": {
-    "": {
-      "name": "My-Trash-Your-Treasure"
-    }
-  }
+  "packages": {}
 }
