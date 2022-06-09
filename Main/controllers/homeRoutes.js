@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
         },
       ],
     });
-
+//loads users with option to click them
     // Serialize data so the template can read it
     const blogs = postData.map((post) => post.get({ plain: true }));
 
