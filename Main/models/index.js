@@ -1,28 +1,15 @@
 const User = require('./User');
-const Post = require('./Post');
-const Comment = require('./Comment');
+const SaleItem = require('./SaleItem');
+//user + sale items
+//need to build relationship between user and their sale items
+//1 user has many sale items but sale items doesn't have many users
 
-Post.belongsTo(User, {
+SaleItem.belongsTo(User, {
   foreignKey: 'userId',
   onDelete: 'CASCADE',
 });
 
-User.hasMany(Post, {
-  foreignKey: 'userId',
-  onDelete: 'CASCADE',
-});
-
-Post.hasMany(Comment, {
-  foreignKey: 'postId',
-  onDelete: 'CASCADE',
-});
-
-Comment.belongsTo(User, {
-  foreignKey: 'userId',
-  onDelete: 'CASCADE',
-});
-
-User.hasMany(Comment, {
+User.hasMany(SaleItem, {
   foreignKey: 'userId',
   onDelete: 'CASCADE',
 });
