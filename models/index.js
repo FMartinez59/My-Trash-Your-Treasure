@@ -16,6 +16,5 @@ User.hasMany(SaleItem, {
 
 module.exports = {
   User,
-  Comment,
-  Post,
+  SaleItem
 };
