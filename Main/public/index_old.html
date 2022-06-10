@@ -12,12 +12,17 @@
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"/>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/15b1cf6654.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link href="homepage.css" rel="stylesheet">
   </head>
   <body>
     <header>
+      <!-- nav bar -->
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a href=""><h2>My <i class="fa-solid fa-trash"></i>, Your Treasure</h2></a>
+          <a class="logo" href=""><h2>My <i class="fa-solid fa-trash"></i>, Your Treasure</h2></a>
         </div>
       
         <div id="navbarBasicExample" class="navbar-menu">
@@ -27,18 +32,76 @@
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-primary">
+                <a class="button is-primary" id="signup">
                   <strong>Sign up</strong>
                 </a>
-                <a class="button is-light">
+                <a class="button is-light" id="login">
                   Log in
                 </a>
-                <a class="button is-danger is-rounded">Cart</a>
+                <a class="button is-danger is-rounded" id="cart">Cart</a>
               </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
+    <!--  -->
+    <br/><br/>
+    <section>
+    <div class="container">
+      <div class="notification is-primary" id="intro">
+        <center>CHECK OUT SOME NEW SELLERS!</center>
+      </div>
+    </div>
+  </section>
+
+    <!--  -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <section class="sellers">
+    <div class="container">
+      <div class="columns ">
+        <div class="column">
+              
+            <!--1st Column Created-->
+            <div class="notification seller" id="seller1">
+                SELLER 1
+            </div>
+        </div>
+        
+        <div class="column">
+
+            <!--2nd Column Created-->
+            <div class="notification seller" id="seller2">
+                SELLER 2
+            </div>
+        </div>
+        <div class="column">
+
+            <!--3rd Column Created-->
+            <div class="notification seller" id="seller3">
+                SELLER 3
+            </div>
+        </div>
+        <div class="column">
+              
+            <!--4th Column Created-->
+            <div class="notification seller" id="seller4">
+                SELLER 4
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        .
+      </p>
+    </div>
+  </footer>
   </body>
 </html>
