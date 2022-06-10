@@ -44,7 +44,47 @@
 .seller {
     padding-top: 10rem;
     padding-bottom: 10rem;
-    text-align: center;
+    
 }
 
-/* #4F6D7A, #C9DCE4, #EAEAEA */
+.seller p {
+    margin-top: -9rem;
+    text-align: center;
+    font-weight: 500rem;
+}
+
+#seller1 {
+    background-image: url(/public/images/ruben.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 320px;
+}
+
+#seller2 {
+    background-image: url(/public/images/novia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 320px;
+}
+
+#seller3 {
+    background-image: url(/public/images/fernado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 320px;
+}
+
+#seller4 {
+    background-image: url(/public/images/jason.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 320px;
+}
+
+#footer {
+    background-color: var(--sec-color);
+}
