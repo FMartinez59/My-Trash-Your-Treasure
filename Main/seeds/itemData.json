@@ -1,6 +1,6 @@
 [
   {
-    "picture": "URL",
+    "picture": "https://www.paffen-sport.com/953-4091-large/stealth-boxing-gloves.jpg",
     "item_name": "Boxing Set",
     "price": 50,
     "quantity": 1,
@@ -8,7 +8,7 @@
     "description": "a stuffed or inflated bag, typically cylindrical or pear-shaped, suspended so it can be punched for exercise or training, especially by boxers."
   },
   {
-    "picture": "URL",
+    "picture": "https://images.unsplash.com/photo-1530028828-25e8270793c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z29sZiUyMGNsdWJzfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
     "item": "Golf Set",
     "price": 57,
     "quantity": 25,
@@ -16,8 +16,8 @@
     "description": "Hybrid: A 5 Hybrid is a great alternative to difficult long irons that gives you more confidence on a variety of shots"
   },
   {
-    "picture": "URL",
-    "item": "Play Station 10",
+    "picture": "https://assets.reedpopcdn.com/ps5-pre-order-header.jpg/BROK/thumbnail/1600x900/quality/100/ps5-pre-order-header.jpg",
+    "item": "Play Station 5",
     "price": 599,
     "quantity": 3,
     "status": false,

@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 class SaleItem extends Model {}
+//add some field (purchaser id) to track who buys what
 SaleItem.init(
   {
     //id id for db
@@ -40,6 +41,13 @@ SaleItem.init(
       allowNull: false,
     },
     user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
+    buyer_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
