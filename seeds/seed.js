@@ -12,9 +12,9 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  for (const SaleItem of itemData) {
+  for (const saleItem of itemData) {
     await SaleItem.create({
-      ...SaleItem,
+      ...saleItem,
       userId: users[Math.floor(Math.random() * users.length)].id,
     });
   }
