@@ -16,6 +16,8 @@
     background-color: var(--sec-color);
     color: black;
 }
+/* Login Modal */
+
 
 #login {
     background-color: var(--trd-color);
