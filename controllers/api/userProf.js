@@ -2,6 +2,17 @@ const router = require('express').Router();
 const User = require('../../models/User');
 const SaleItem = require('../../models/SaleItem');
 
+router.get('/', async (req, res) => {
+  try {
+    const SaleItem = await SaleItem.findAll();
+    res.status(200).json(SaleItem);
+      console.log(SaleItem)
+    } catch (err) {
+       res.status(500).json(err);
+    }
+  }
+)
+
 router.get('/:id', (req, res) => {
   // Get all from items from profile
   User.findByPk(req.params.id, {
@@ -23,7 +34,7 @@ router.put('/:id', (req, res) => {
       description: req.body.description,
       price: req.body.price,
       quantity: req.body.quantity,
-      status: req.body.status,
+      // status: req.body.status,
     },
     {
       // Gets the sale items based on the userId given in the request parameters
@@ -39,3 +50,4 @@ router.put('/:id', (req, res) => {
     })
     .catch((err) => res.json(err));
 });
+module.exports = router;
