@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Post, Comment, User } = require('../models');
+const {User, SaleItem } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
     // Get all posts and JOIN with user data
-    const postData = await Post.findAll({
+    const saleData = await User.findAll({
       include: [
         {
           model: User,
