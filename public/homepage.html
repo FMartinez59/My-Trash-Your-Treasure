@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Trash, Your Trasure</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+		/>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/15b1cf6654.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="homepage-reset.css" rel="stylesheet">
+    <link href="homepage.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <!-- nav bar -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="logo" href=""><h2>My <i class="fa-solid fa-trash"></i>, Your Treasure</h2></a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start"></div>
+        
+          
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary" id="signup">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light" id="login">
+                  Log in
+                </a>
+                <a class="button is-danger is-rounded" id="cart">Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--  -->
+    <br/><br/>
+    <section>
+      <div class="container">
+        <div class="notification is-primary" id="intro">
+          <center>CHECK OUT SOME NEW SELLERS!</center>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <section class="sellers">
+      <div class="container">
+        <div class="columns ">
+          <div class="column">
+            <a><div class="notification seller" id="seller1">
+              <p>SELLER 1</p>
+            </div>
+          </a>
+          </div>
+        
+          <div class="column">
+            <a><div class="notification seller" id="seller2">
+              <p>SELLER 2</p>
+              </div>
+            </a>
+          </div>
+          <div class="column">
+            <a><div class="notification seller" id="seller3">
+              <p>SELLER 3</p>
+            </div>
+            </a>
+          </div>
+          <div class="column">
+            <a><div class="notification seller" id="seller4">
+              <p>SELLER 4</p>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <h1>My <i class="fa-solid fa-trash"></i>, Your Treasure</h1>
+      <div class="columns">
+        <div class="column about">
+          <h3>About Us</h3>
+            <p class="has-text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum numquam temporibus voluptatum molestiae, ipsa iste commodi iure. Animi dolorem eum harum magni error doloremque temporibus quisquam repudiandae facilis itaque.
+            </p>
+        </div>
+        <div class="column social">
+          <h3 id="social">Social</h3>
+          <ul class='has-text-center'>
+            <li>
+              <p id="name">Ruben:</p>
+              <a href="https://www.linkedin.com/in/ruben-castro-66a234230/">
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+
+            <a href="https://github.com/RubenCastroCoding">
+              <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+          </li>
+            <li>
+              <p id="name">Novia:</p>
+              <a href="https://www.linkedin.com/in/novia-phan-555a101b2/">
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+              </a>
+              <a href="https://github.com/supanov">
+                <i class="fa-brands fa-github fa-xl"></i>
+              </a>
+            </li>
+            <li>
+              <p id="name">Fernado:</p>
+              <a href="https://www.linkedin.com/in/fernando-martinez-jr-6305a8220/">
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+              </a>
+              <a href="https://github.com/FMartinez59">
+                <i class="fa-brands fa-github fa-xl"></i>
+              </a>
+            </li>
+            <li>
+              <p id='name'>Jason:</p>
+              <a href="https://www.linkedin.com/in/jason-chun-49523021b/">
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+              </a>
+              <a href="https://github.com/jasonchun7">
+                <i class="fa-brands fa-github fa-xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="column email">
+          <h3 id="email">Email</h3>
+          <ul>
+            <li><a href="mailto:RubenCastroCoding@gmail.com" class="footer-link"
+              >Ruben Castro</a
+              ></li>
+              <li><a href="mailto:noviaphan@gmail.com" class="footer-link"
+                >Novia Phan</a
+                ></li>
+            <li><a href="mailto:nando.vlogs59@gmail.com" class="footer-link"
+              >Fernado Martinez</a
+              ></li>
+                  <li><a href="mailto:jchun711@gmail.com" class="footer-link"
+                    >Jason Chun</a
+                  ></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>
