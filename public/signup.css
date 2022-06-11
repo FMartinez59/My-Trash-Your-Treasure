@@ -6,6 +6,45 @@
         overflow-x: hidden; 
     }
 
+    :root {
+        --main-color: #4F6D7A;
+        --sec-color: #C9DCE4;
+        --trd-color: #EAEAEA;
+    }
+    
+    * {
+        font-family: "Roboto Slab", serif;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .logo {
+        color: var(--main-color);
+        font-size: 3rem;
+    }
+    
+    #signup {
+        background-color: var(--sec-color);
+        color: black;
+    }
+    /* Login Modal */
+    
+    
+    #login {
+        background-color: var(--trd-color);
+    }
+    
+    #cart {
+        background-color: var(--main-color);
+    }
+    
+    #intro {
+        background-color: var(--sec-color);
+        color: black;
+    }
+
 
 body {
     background-color: #4F6D7A;
@@ -23,12 +62,62 @@ body {
 
 .login-box {
     width: 360px;
-    height: 290px;
+    height: 280px;
     margin: auto;
     border-radius: 3px;
     background-color: white;
     margin-top: 5%;
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    width: 555px;
+    height: 450px;
+    background-color: white;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    /* width: 80%; Could be more or less, depending on screen size */
+    border-radius: 3px;
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
 
 h1 {
     text-align: center;
@@ -38,14 +127,14 @@ h1 {
 }
 
 form {
-    width: 400px;
+    width: 300px;
     margin-left: 20px;
 }
 
 form label {
     display: flex;
     margin-top: 20px;
-    font-size: 15px
+    font-size: 18px
 }
 
 form input {
@@ -57,7 +146,7 @@ form input {
     outline: none;
 }
 input [type="button"]{
-    width: 320px;
+    width: 390px;
     height: 35px;
     margin-top: 15px;
     border: none;
@@ -87,3 +176,16 @@ p{
 }
 
 .button:hover {opacity: 1;}
+
+
+.button:hover {opacity: 1;}
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
