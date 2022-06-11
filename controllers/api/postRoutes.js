@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { SaleItem } = require('../../models');
 const withAuth = require('../../utils/auth');
-
+//may not need this route
 router.post('/', withAuth, async (req, res) => {
   try {
     const newPost = await SaleItem.create({
