@@ -8,8 +8,13 @@
     font-family: "Roboto Slab", serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo {
-    color: var(--main-color)
+    color: var(--main-color);
+    font-size: 3rem;
 }
 
 #signup {
@@ -51,6 +56,7 @@
     margin-top: -9rem;
     text-align: center;
     font-weight: 500rem;
+    color: black;
 }
 
 #seller1 {
@@ -85,6 +91,117 @@
     height: 320px;
 }
 
-#footer {
-    background-color: var(--sec-color);
+#seller1,
+#seller2,
+#seller3,
+#seller4 {
+    transition: 
+    transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
 }
+
+#seller1:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+#seller2:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+#seller3:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+#seller4:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+.footer h1 {
+    color: var(--main-color)
+}
+
+.footer h3 {
+    color: var(--sec-color)
+}
+
+.about p {
+    font-size: 18px;
+    color: var(--trd-color)
+}
+
+.social ul li {
+    list-style-type: none;
+}
+
+.social ul li p {
+    color: var(--trd-color);
+    font-size: 18px;
+}
+
+#name {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: var(--trd-color);
+    font-size: 18px;
+}
+
+.email ul li {
+    list-style-type: none;
+}
+
+.content ul li a:hover {
+    color: var(--sec-color);
+}
+
+/* .content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.email ul li { 
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.social ul li {
+    list-style-type: none;
+}
+
+.social p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.content ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.content ul li a:hover {
+    color: #ddd;
+}
+
+h6 {
+    text-align: center;
+    color: #fff !important;
+    font-size: 30px !important;
+    margin-bottom: 25px !important;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+@media(max-width: 768px) {
+        .bottom p,.has-text-right{
+        text-align: center !important;
+    }
+} */
+
