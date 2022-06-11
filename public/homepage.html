@@ -37,9 +37,42 @@
                 <a class="button is-primary" id="signup">
                   <strong>Sign up</strong>
                 </a>
-                <a class="button is-light" id="login">
+                <!-- <a class="button is-light" id="login">
                   Log in
-                </a>
+                </a> -->
+                <!-- Modal Form -->
+                <button onclick="document.getElementById('id01').style.display='block'" a class="button is-light" id="login">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+    </div>
+
+    <div class="container">
+      <h1>Login</h1>
+      <form>
+          <label>Email:</label>
+          <input type="email" placeholder="">
+          <label>Password:</label>
+          <input type="password" placeholder="">
+          <input type="button" class="button" value="Submit">
+      </form>
+      <p class="para-2">Don't have an account? <a href="#">Sign Up here</a></p>
+        
+      </label>
+    </div>
+  </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+  
+    </div>
+  </form>
+</div>
                 <a class="button is-danger is-rounded" id="cart">Cart</a>
               </div>
             </div>
@@ -168,4 +201,5 @@
   </footer>
 
   </body>
+  <script src="./script.js"></script>
 </html>
