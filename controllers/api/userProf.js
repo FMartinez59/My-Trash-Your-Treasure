@@ -50,4 +50,5 @@ router.put('/:id', (req, res) => {
     })
     .catch((err) => res.json(err));
 });
+//delete route
 module.exports = router;
