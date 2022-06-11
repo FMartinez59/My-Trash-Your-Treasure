@@ -1,0 +1,140 @@
+:root {
+    --main-color: #4F6D7A;
+    --sec-color: #C9DCE4;
+    --trd-color: #EAEAEA;
+}
+
+* {
+    font-family: "Roboto Slab", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+#goBack {
+    background-color: var(--main-color);
+    color: var(--trd-color)
+}
+
+#signup {
+    background-color: var(--sec-color);
+    color: black;
+}
+/* Login Modal */
+
+
+#login {
+    background-color: var(--trd-color);
+}
+
+#cart {
+    background-color: var(--main-color);
+    color: white;
+}
+
+#info {
+    background-color: var(--sec-color);
+    color: black;
+}
+
+#sale {
+    background-color: var(--main-color);
+}
+
+.columns {
+    background-color: var(--main-color);
+    height: 350px;
+    margin-top: 50px;
+}
+
+.footer h1 {
+    color: var(--main-color)
+}
+
+.footer h3 {
+    color: var(--sec-color)
+}
+
+.about p {
+    font-size: 18px;
+    color: var(--trd-color)
+}
+
+.social ul li {
+    list-style-type: none;
+}
+
+.social ul li p {
+    color: var(--trd-color);
+    font-size: 18px;
+}
+
+#name {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: var(--trd-color);
+    font-size: 18px;
+}
+
+.email ul li {
+    list-style-type: none;
+}
+
+.content ul li a:hover {
+    color: var(--sec-color);
+}
+
+/* .content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.email ul li { 
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.social ul li {
+    list-style-type: none;
+}
+
+.social p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.content ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.content ul li a:hover {
+    color: #ddd;
+}
+
+h6 {
+    text-align: center;
+    color: #fff !important;
+    font-size: 30px !important;
+    margin-bottom: 25px !important;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+@media(max-width: 768px) {
+        .bottom p,.has-text-right{
+        text-align: center !important;
+    }
+} */
+
