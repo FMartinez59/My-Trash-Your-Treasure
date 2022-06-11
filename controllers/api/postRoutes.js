@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Post } = require('../../models');
+const { SaleItem } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
   try {
-    const newPost = await Post.create({
+    const newPost = await SaleItem.create({
       ...req.body,
       userId: req.session.user_id,
     });
