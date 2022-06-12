@@ -37,7 +37,29 @@ async function editFormHandler(event) {
   } else {
     alert('Failed to edit Item');
   }
+
+  const responseDelete = await fetch(`/api/profile/${id}`, {
+    method: 'DELETE',
+    body: JSON.stringify({
+      picture,
+      item_name,
+      price,
+      quantity,
+      status,
+      description,
+    }),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  if (responseDelete.ok) {
+    document.location.delete(`/api/profile/${id}`);
+  } else {
+    alert('Failed to Delete Item');
+  }
 }
+
 
 document
   .querySelector('.edit-item-form')
