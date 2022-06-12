@@ -50,4 +50,21 @@ router.put('/:id', (req, res) => {
     })
     .catch((err) => res.json(err));
 });
+//delete route
+router.delete('/:id', (req, res) => {
+  // Looks for the books based on isbn given in the request parameters and deletes the instance from the database
+  SaleItem.destroy({
+    where: {
+      picture: req.body.picture,
+      item_name: req.body.item_name,
+      description: req.body.description,
+      price: req.body.price,
+      quantity: req.body.quantity,
+    },
+  })
+    .then((deletedItem) => {
+      res.json(deletedItem);
+    })
+    .catch((err) => res.json(err));
+});
 module.exports = router;
