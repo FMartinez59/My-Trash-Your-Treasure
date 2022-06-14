@@ -19,69 +19,94 @@
 </head>
 
 <body>
-    <header>
+  <header>
         <!-- nav bar -->
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="logo" id="logo" href="">
-                    <h2>My <i class="fa-solid fa-trash"></i>, Your Treasure</h2>
-                </a>
-            </div>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="logo" id="logo" href="">
+          <h2>My <i class="fa-solid fa-trash"></i>, Your Treasure</h2>
+        </a>
+      </div>
         
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start"></div>
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button is-light" id="goBack">Back</a>
-                            <a class="button is-primary" id="signup">
-                                <strong>Login</strong>
-                            </a>
-                            <a class="button is-light" id="signout">
-                                Sign Out
-                            </a>
-                            <a class="button is-rounded" id="cart">Cart</a>
-                        </div>
-                    </div>
-                </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start"></div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-light" id="goBack">Back
+              </a>
+              <a class="button is-primary" id="signup">
+                <strong>Login</strong>
+              </a>
+              <a class="button is-light" id="signout">
+                Sign Out
+              </a>
+              <a class="button is-rounded" id="cart">Cart</a>
             </div>
-        </nav>
-    </header>
-    <!-- Seller section -->
-    <section>
-        <div class="container">
-          <div class="notification is-primary" id="info">
-            <center>Seller Info</center>
-            <ul>
-                <li>*image*</li>
-                <li>Name: </li>
-                <li>Location: </li>
-                <li>Contact: </li>
-                <li>About: </li>
-              </ul>
           </div>
         </div>
-    </section>
-    <br/>
+      </div>
+    </nav>
+  </header>
+    <!-- Seller section -->
+  <section>
     <div class="container">
-        <div class="notification is-primary" id="sale">
-          <strong>Items for Sale:</strong>
-        </div>
+      <div class="notification is-primary" id="info">
+        <center>Seller Info</center>
+        <ul>
+          {{#each}}
+            <li id="image">{{image}}</li>
+            <li id="name">Name: {{name}}</li>
+            <li id="location">Location: {{location}}</li>
+            <li id="contact">Contact: {{contact}}</li>
+            <li id="about">About: {{about}}</li>
+          {{/each}}
+        </ul>
+      </div>
     </div>
-    <br/>
-    <div class="container">
-        <div class="row">
-            <div class="col">
+  </section>
+  <br/>
+  <div class="container">
+    <div class="notification is-primary" id="sale">
+      <strong>Items for Sale:</strong>
+    </div>
+  </div>
+  <br/>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          {{#each}}
+            <img src="..." class="card-img-top" alt="..." id="picture">
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" id="item-name">Item: {{item-name}}</li>
+              <li class="list-group-item" id="price">Price: {{price}}</li>
+              <li class="list-group-item" id="quantity">Quantity: {{quantity}}</li>
+              <li class="list-group-item" id="status">Status: {{status}}</li>
+              <li class="list-group-item" id="description">Description: {{description}}</li>
+            </ul>
+          {{/each}}
+            <div class="card-body">
+              <a href="#" class="card-link" type="submit">Save</a>
+              <a href="#" class="card-link" type="submit">Edit</a>
+              <a href="#" class="card-link" type="submit">Delete</a>
+            </div>
+        </div>
+      </div>
+        <div class="col">
                 <div class="card" style="width: 18rem;">
+                  {{#each}}
                     <img src="..." class="card-img-top" alt="..." id="picture">
 
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item" id="item-name">Item:</li>
-                      <li class="list-group-item" id="price">Price:</li>
-                      <li class="list-group-item" id="quantity">Quantity:</li>
-                      <li class="list-group-item" id="status">Status:</li>
-                      <li class="list-group-item" id="description">Description:</li>
+                      <li class="list-group-item" id="item-name">Item: {{item-name}}</li>
+                      <li class="list-group-item" id="price">Price: {{price}}</li>
+                      <li class="list-group-item" id="quantity">Quantity: {{quantity}}</li>
+                      <li class="list-group-item" id="status">Status: {{status}}</li>
+                      <li class="list-group-item" id="description">Description: {{description}}</li>
                     </ul>
+                    {{/each}}
                     <div class="card-body">
                       <a href="#" class="card-link" type="submit">Save</a>
                       <a href="#" class="card-link" type="submit">Edit</a>
@@ -91,33 +116,17 @@
               </div>
               <div class="col">
                 <div class="card" style="width: 18rem;">
+                  {{#each}}
                     <img src="..." class="card-img-top" alt="..." id="picture">
 
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item" id="item-name">Item:</li>
-                      <li class="list-group-item" id="price">Price:</li>
-                      <li class="list-group-item" id="quantity">Quantity:</li>
-                      <li class="list-group-item" id="status">Status:</li>
-                      <li class="list-group-item" id="description">Description:</li>
+                      <li class="list-group-item" id="item-name">Item: {{item-name}}</li>
+                      <li class="list-group-item" id="price">Price: {{price}}</li>
+                      <li class="list-group-item" id="quantity">Quantity: {{quantity}}</li>
+                      <li class="list-group-item" id="status">Status: {{status}}</li>
+                      <li class="list-group-item" id="description">Description: {{description}}</li>
                     </ul>
-                    <div class="card-body">
-                      <a href="#" class="card-link" type="submit">Save</a>
-                      <a href="#" class="card-link" type="submit">Edit</a>
-                      <a href="#" class="card-link" type="submit">Delete</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="..." id="picture">
-
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item" id="item-name">Item:</li>
-                      <li class="list-group-item" id="price">Price:</li>
-                      <li class="list-group-item" id="quantity">Quantity:</li>
-                      <li class="list-group-item" id="status">Status:</li>
-                      <li class="list-group-item" id="description">Description:</li>
-                    </ul>
+                    {{/each}}
                     <div class="card-body">
                       <a href="#" class="card-link" type="submit">Save</a>
                       <a href="#" class="card-link" type="submit">Edit</a>
