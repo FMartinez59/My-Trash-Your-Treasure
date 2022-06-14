@@ -18,7 +18,7 @@ User.hasMany(SaleItem, {
 UserBio.belongsTo(user, {
   foreignKey: 'userId',
   onDelete: 'CASCADE',
-})
+});
 //user needs to r
 module.exports = {
   User,
