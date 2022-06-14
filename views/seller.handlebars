@@ -54,13 +54,12 @@
       <div class="notification is-primary" id="info">
         <center>Seller Info</center>
         <ul>
-          {{#each}}
-            <li id="image">{{image}}</li>
+        {{#with}}
             <li id="name">Name: {{name}}</li>
             <li id="location">Location: {{location}}</li>
             <li id="contact">Contact: {{contact}}</li>
             <li id="about">About: {{about}}</li>
-          {{/each}}
+        {{/with}}
         </ul>
       </div>
     </div>
@@ -95,45 +94,45 @@
         </div>
       </div>
         <div class="col">
-                <div class="card" style="width: 18rem;">
-                  {{#each}}
-                    <img src="..." class="card-img-top" alt="..." id="picture">
+          <div class="card" style="width: 18rem;">
+            {{#each}}
+              <img src="..." class="card-img-top" alt="..." id="picture">
 
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item" id="item-name">Item: {{item-name}}</li>
-                      <li class="list-group-item" id="price">Price: {{price}}</li>
-                      <li class="list-group-item" id="quantity">Quantity: {{quantity}}</li>
-                      <li class="list-group-item" id="status">Status: {{status}}</li>
-                      <li class="list-group-item" id="description">Description: {{description}}</li>
-                    </ul>
-                    {{/each}}
-                    <div class="card-body">
-                      <a href="#" class="card-link" type="submit">Save</a>
-                      <a href="#" class="card-link" type="submit">Edit</a>
-                      <a href="#" class="card-link" type="submit">Delete</a>
-                    </div>
-                  </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="item-name">Item: {{item-name}}</li>
+                <li class="list-group-item" id="price">Price: {{price}}</li>
+                <li class="list-group-item" id="quantity">Quantity: {{quantity}}</li>
+                <li class="list-group-item" id="status">Status: {{status}}</li>
+                <li class="list-group-item" id="description">Description: {{description}}</li>
+              </ul>
+            {{/each}}
+              <div class="card-body">
+                <a href="#" class="card-link" type="submit">Save</a>
+                <a href="#" class="card-link" type="submit">Edit</a>
+                <a href="#" class="card-link" type="submit">Delete</a>
               </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                  {{#each}}
-                    <img src="..." class="card-img-top" alt="..." id="picture">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              {{#each}}
+                <img src="..." class="card-img-top" alt="..." id="picture">
 
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item" id="item-name">Item: {{item-name}}</li>
-                      <li class="list-group-item" id="price">Price: {{price}}</li>
-                      <li class="list-group-item" id="quantity">Quantity: {{quantity}}</li>
-                      <li class="list-group-item" id="status">Status: {{status}}</li>
-                      <li class="list-group-item" id="description">Description: {{description}}</li>
-                    </ul>
-                    {{/each}}
-                    <div class="card-body">
-                      <a href="#" class="card-link" type="submit">Save</a>
-                      <a href="#" class="card-link" type="submit">Edit</a>
-                      <a href="#" class="card-link" type="submit">Delete</a>
-                    </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" id="item-name">Item: {{item-name}}</li>
+                  <li class="list-group-item" id="price">Price: {{price}}</li>
+                  <li class="list-group-item" id="quantity">Quantity: {{quantity}}</li>
+                  <li class="list-group-item" id="status">Status: {{status}}</li>
+                  <li class="list-group-item" id="description">Description: {{description}}</li>
+                </ul>
+              {{/each}}
+              <div class="card-body">
+                <a href="#" class="card-link" type="submit">Save</a>
+                <a href="#" class="card-link" type="submit">Edit</a>
+                <a href="#" class="card-link" type="submit">Delete</a>
                 </div>
             </div>
+          </div>
         </div>
     </div>
     <br/>
@@ -148,7 +147,7 @@
             <h5 class="text-uppercase">About Us</h5>
     
             <p class="text-center">
-              Four students striving to become Full-Stack Developers by completing the Full-Stack Coding Bootcamp at Goergia Tech. Checkout out our Socials and Projects we each have so far!
+              Four students striving to become Full-Stack Developers by completing the Full-Stack Coding Bootcamp at Georgia Tech. Checkout out our Socials and Projects we each have so far!
             </p>
           </div>
           <!--Grid column-->
