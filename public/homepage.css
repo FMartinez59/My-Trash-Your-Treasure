@@ -8,159 +8,6 @@
     font-family: "Roboto Slab", serif;
 }
 
-a {
-    text-decoration: none;
-}
-
-.logo {
-    color: var(--main-color);
-    font-size: 3rem;
-}
-
-#signup {
-    background-color: var(--sec-color);
-    color: black;
-}
-/* Login Modal */
-
-
-#login {
-    background-color: var(--trd-color);
-}
-
-#cart {
-    background-color: var(--main-color);
-}
-
-#intro {
-    background-color: var(--sec-color);
-    color: black;
-}
-
-.sellers {
-    background-color: var(--trd-color);
-    height: 500px;
-}
-
-.columns {
-    background-color: var(--main-color);
-    height: 350px;
-    margin-top: 50px;
-}
-
-.seller {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    
-}
-
-.seller p {
-    margin-top: -9rem;
-    text-align: center;
-    font-weight: 500rem;
-    color: black;
-}
-
-#seller1 {
-    background-image: url(/public/images/ruben.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 320px;
-}
-
-#seller2 {
-    background-image: url(/public/images/novia.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 320px;
-}
-
-#seller3 {
-    background-image: url(/public/images/fernado.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 320px;
-}
-
-#seller4 {
-    background-image: url(/public/images/jason.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 320px;
-}
-
-#seller1,
-#seller2,
-#seller3,
-#seller4 {
-    transition: 
-    transform 750ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;
-}
-
-#seller1:hover {
-    transform: scale(1.2);
-    opacity: .75;
-}
-
-#seller2:hover {
-    transform: scale(1.2);
-    opacity: .75;
-}
-
-#seller3:hover {
-    transform: scale(1.2);
-    opacity: .75;
-}
-
-#seller4:hover {
-    transform: scale(1.2);
-    opacity: .75;
-}
-
-.footer h1 {
-    color: var(--main-color)
-}
-
-.footer h3 {
-    color: var(--sec-color)
-}
-
-.about p {
-    font-size: 18px;
-    color: var(--trd-color)
-}
-
-.social ul li {
-    list-style-type: none;
-}
-
-.social ul li p {
-    color: var(--trd-color);
-    font-size: 18px;
-}
-
-#name {
-    margin-bottom: 10px;
-}
-
-.footer ul li a {
-    color: var(--trd-color);
-    font-size: 18px;
-}
-
-.email ul li {
-    list-style-type: none;
-}
-
-.content ul li a:hover {
-    color: var(--sec-color);
-}
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -270,3 +117,148 @@ p{
     from {transform: scale(0)}
     to {transform: scale(1)}
   }
+  
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+#signup {
+    background-color: var(--sec-color);
+    color: black;
+}
+
+#login {
+    background-color: var(--trd-color);
+}
+
+#cart {
+    background-color: var(--main-color);
+    margin: 0px;
+}
+
+#intro {
+    background-color: var(--sec-color);
+    color: black;
+}
+
+.sellers {
+    background-color: var(--trd-color);
+    height: 500px;
+}
+
+.columns {
+    background-color: var(--main-color);
+    height: 350px;
+    margin-top: 50px;
+}
+
+.seller {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    
+}
+
+.seller p {
+    margin-top: -9rem;
+    text-align: center;
+    font-weight: 500rem;
+    color: black;
+}
+
+#seller1 {
+    background-image: url(/public/images/ruben.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 320px;
+}
+
+#seller2 {
+    background-image: url(/public/images/novia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 320px;
+}
+
+#seller3 {
+    background-image: url(/public/images/fernado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 320px;
+}
+
+#seller4 {
+    background-image: url(/public/images/jason.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 320px;
+}
+
+#seller1,
+#seller2,
+#seller3,
+#seller4 {
+    transition: 
+    transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+}
+
+#seller1:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+#seller2:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+#seller3:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+#seller4:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
+
+#footer {
+    background-color: var(--main-color);
+}
+
+.footer h1 {
+    color: var(--sec-color)
+}
+
+.footer h5 {
+    color: var(--trd-color)
+}
+
+.about p {
+    color: var(--sec-color);
+
+}
+
+.social ul li a {
+    color: var(--sec-color);
+    padding-right: 10px;
+}
+
+.social ul li p {
+    padding-right: 20px;
+    color: var(--sec-color)
+}
+
+.email ul li a {
+    color: var(--sec-color);
+    padding-right: 20px;
+}
