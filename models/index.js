@@ -1,5 +1,6 @@
 const User = require('./User');
 const SaleItem = require('./SaleItem');
+const UserBio = require("./userBio")
 //user + sale items
 //need to build relationship between user and their sale items
 //1 user has many sale items but sale items doesn't have many users
@@ -14,6 +15,11 @@ User.hasMany(SaleItem, {
   onDelete: 'CASCADE',
 });
 
+UserBio.belongsTo(user, {
+  foreignKey: 'userId',
+  onDelete: 'CASCADE',
+})
+//user needs to r
 module.exports = {
   User,
   SaleItem
