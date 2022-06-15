@@ -5,10 +5,6 @@ class UserBio extends Model {}
 
 UserBio.init(
   {
-    image: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     name: {
       type: DataTypes.STRING,
       allowNull: false,

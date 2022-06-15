@@ -6,21 +6,25 @@ const UserBio = require("./userBio")
 //1 user has many sale items but sale items doesn't have many users
 
 SaleItem.belongsTo(User, {
-  foreignKey: 'userId',
-  onDelete: 'CASCADE',
+  foreignKey: 'user_id',
 });
 
 User.hasMany(SaleItem, {
-  foreignKey: 'userId',
+  foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
 
-UserBio.belongsTo(user, {
-  foreignKey: 'userId',
+UserBio.belongsTo(User, {
+  foreignKey: 'user_id',
   onDelete: 'CASCADE',
+})
+User.hasOne(UserBio, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE'
 })
 //user needs to r
 module.exports = {
   User,
-  SaleItem
+  SaleItem,
+  UserBio
 };
