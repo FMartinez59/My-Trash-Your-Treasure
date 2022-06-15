@@ -2,7 +2,7 @@ async function newFormHandler(event) {
     event.preventDefault();
   
     const picture = document.querySelector('#picture').value;
-    const item_name = document.querySelector('#item_name').value;
+    const item_name = document.querySelector('#item-name').value;
     const price = document.querySelector('#price').value;
     const quantity = document.querySelector('#quantity').value;
     const status = document.querySelector('#is_sold:checked') ? true : false;
