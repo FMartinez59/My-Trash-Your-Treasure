@@ -1,0 +1,26 @@
+ <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="item-container">
+            <form action="/save-new-item" method="post">
+                <div class="form-group">
+                    <label for="item-name">Item Name: {{item.item_name}}</label>
+                    <input type="text" class="form-control" id="item-name" name="item-name" placeholder="Item Name">
+                </div>
+                <div class="form-group">
+                    <label for="price">Price: {{item.item_name}}</label>
+                    <input type="text" class="form-control" id="price" name="price" placeholder="Price">
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity: {{item.item_name}}</label>
+                    <input type="text" class="form-control" id="quantity" name="quantity" placeholder="Quantity">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description: {{item.item_name}}</label>
+                    <input type="text" class="form-control" id="description" name="description" placeholder="Item Description">
+                    <input type="hidden" value="{{profile}}" name="profileId" >
+                </div>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
