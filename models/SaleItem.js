@@ -43,13 +43,6 @@ SaleItem.init(
         key: 'id',
       },
     },
-    buyer_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
-    },
   },
   {
     sequelize,
