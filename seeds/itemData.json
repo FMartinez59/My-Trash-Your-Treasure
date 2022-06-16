@@ -1,6 +1,5 @@
 [
   {
-    "picture": "https://www.paffen-sport.com/953-4091-large/stealth-boxing-gloves.jpg",
     "item_name": "Boxing glove Set",
     "price": 50,
     "quantity": 1,
@@ -8,7 +7,7 @@
     "description": "16oz Boxing Gloves"
   },
   {
-    "picture": "https://images.unsplash.com/photo-1530028828-25e8270793c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z29sZiUyMGNsdWJzfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+  
     "item_name": "Golf Set",
     "price": 57,
     "quantity": 25,
@@ -16,7 +15,7 @@
     "description": "Golf stick used by tiger woods"
   },
   {
-    "picture": "https://assets.reedpopcdn.com/ps5-pre-order-header.jpg/BROK/thumbnail/1600x900/quality/100/ps5-pre-order-header.jpg",
+    
     "item_name": "Play Station 5",
     "price": 599,
     "quantity": 3,
@@ -24,7 +23,7 @@
     "description": "PlayStation®5"
   },
   {
-    "picture": "https://images.carriercms.com/image/upload/w_500,c_lfill,q_auto,f_auto/v1599155962/carrier/residential-hvac/products/heat-pumps/infinity-15-heat-pump-25HNB5.png",
+    
     "item_name": "16 Seer Carrier Hvac System",
     "price": 4000,
     "quantity": 3,
