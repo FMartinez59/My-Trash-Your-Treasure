@@ -37,27 +37,48 @@ router.post('/save-new-item', async (req, res) => {
   }
 });
 
-router.put('/edit-item/:id', async (req, res) => {
-  console.log('pineapple');
-  console.log(typeof req.params.id);
+router.get('/edit-item/:id', async (req, res) => {
+  //console.log('pineapple');
   try {
-    //get item id from server
-    //making it a put target pk of the item the push the updated data into DB
-    //then js client side code must do somthing to recieve the data
-    const itemId = await SaleItem.findByPk(parseInt(req.params.id), {
-      // include: [
-      //   {
-      //     model: SaleItem,
-      //   },
-      // ],
+    const user = await User.findByPk(req.params.id, {
+      include: [
+        {
+          model: SaleItem,
+        },
+      ],
     });
-    // console.log(itemId)
-    const itemData = SaleItem.get({ plain: true });
-    console.log(itemData);
-    res.render('edit-item', itemId);
+    const userData = user.get({ plain: true });
+    userData.SaleItems[0].profile = req.params.id;
+    console.log('userData', userData.SaleItems[0]);
+    res.render('edit-item', userData.SaleItems[0]);
+    // res.json(user)
+    // res.render('productpg')
   } catch (err) {
-    console.log('orange');
     res.status(500).json(err);
+  }
+});
+
+router.post('/save-edit-item', async (req, res) => {
+  console.log(req.body);
+  try {
+    SaleItem.update (
+      {
+      item_name: req.body.item_name,
+      description: req.body.description,
+      price: req.body.price,
+      quantity: req.body.quantity,
+    },
+    {
+      // Gets the sale items based on the userId given in the request parameters
+      where: {
+        id: req.body.user_id,
+      },
+    }
+    )
+    res.redirect(`/profile/${req.body.user_id}`);
+  }
+  catch (err) {
+    res.status(500).json(err)
   }
 });
 
