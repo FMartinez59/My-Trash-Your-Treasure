@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
 })
 
 router.get('/profile/:id', async (req, res) => {
-  console.log('/profile/1')
+  // console.log('/profile/1')
   try {
     const user = await User.findByPk(req.params.id, {
       include : [
