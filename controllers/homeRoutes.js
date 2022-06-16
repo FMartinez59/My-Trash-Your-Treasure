@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { User, SaleItem, UserBio } = require('../models');
 const withAuth = require('../utils/auth');
-
 router.get('/', async (req, res) => {
   res.render('homepage');
 });
@@ -39,11 +38,11 @@ router.post('/save-new-item', async (req, res) => {
 });
 
 router.put('/edit-item/:id', async (req, res) => {
-  console.log('pineapple')
-  console.log(typeof req.params.id)
+  console.log('pineapple');
+  console.log(typeof req.params.id);
   try {
     //get item id from server
-    //making it a put target pk of the item the push the updated data into DB 
+    //making it a put target pk of the item the push the updated data into DB
     //then js client side code must do somthing to recieve the data
     const itemId = await SaleItem.findByPk(parseInt(req.params.id), {
       // include: [
@@ -54,10 +53,10 @@ router.put('/edit-item/:id', async (req, res) => {
     });
     // console.log(itemId)
     const itemData = SaleItem.get({ plain: true });
-    console.log(itemData)
+    console.log(itemData);
     res.render('edit-item', itemId);
   } catch (err) {
-    console.log('orange')
+    console.log('orange');
     res.status(500).json(err);
   }
 });
