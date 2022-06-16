@@ -19,6 +19,7 @@
   <div class="container">
     <div class="notification is-primary" id="sale">
       <strong>Items for Sale:</strong>
+      <a class="new-item-form" href="/add-item/{{UserBio.user_id}}">Add Item</a>
     </div>
   </div>
   <br/>
@@ -36,12 +37,11 @@
             </ul>
           {{/each}}
             <div class="card-body">
-              <a href="#" class="card-link" type="submit">Save</a>
-              <a href="#" class="card-link" type="submit">Edit</a>
+              <a href="/edit-item/{{UserBio.user_id}}" class="card-link">Edit</a>
               <a href="#" class="card-link" type="submit">Delete</a>
             </div>
         </div>
     </div>
-    <script src="./js/add-sale.js"></script>
+    <script src="./js/edit-sale.js"></script>
     <br/>
     

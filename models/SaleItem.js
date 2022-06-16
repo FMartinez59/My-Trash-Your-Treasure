@@ -12,10 +12,6 @@ SaleItem.init(
       autoIncrement: true,
     },
     //picture of item
-    picture: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     //item name
     item_name: {
       type: DataTypes.STRING,
@@ -38,16 +34,9 @@ SaleItem.init(
     //sold not sold
     status: {
       type: DataTypes.BOOLEAN,
-      allowNull: false,
+      allowNull: true,
     },
     user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
-    },
-    buyer_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
