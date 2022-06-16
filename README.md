@@ -7,6 +7,7 @@ are also able to list items, give it a price, name, quantity, state if the item 
 ## Deployed Application
 
 ## ScreenShots of Application
+![Mytrash](https://user-images.githubusercontent.com/98436010/173975428-2192c35c-d9e2-4997-860c-b154e963663c.JPG)
 
 
 ## Technology Used
